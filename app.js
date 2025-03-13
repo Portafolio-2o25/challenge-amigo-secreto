@@ -1,13 +1,10 @@
-// El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
-
 // Author : Felipe Toro R.
-// Date   : 08 Marzo 2025
+// Date   : 12 Marzo 2025
 
-var arrayAmigos = [];
+let arrayAmigos = [];
 
 // Al darle click al boton Añadir el texto ingresado se guarda en una array
 function agregarAmigo() {
-   // prompt("Conexion exitosa");
       
    let obtenerNombreInputTxt = document.getElementById('amigo').value;
    esValido = validarTextoIngresado(obtenerNombreInputTxt);  // se lanzan alertas en caso que NO sea valido
@@ -16,11 +13,13 @@ function agregarAmigo() {
         
         arrayAmigos.push(obtenerNombreInputTxt);
         document.getElementById('amigo').value = ""; // Limpiar campo
+         document.getElementById('amigo').focus();
         actualizarListaHtmlLi(arrayAmigos);
    
     } else {
 
         console.log("Probar otra cadena de texto");
+        return;
 
     }
 
@@ -38,7 +37,9 @@ function sortearAmigo() {
         let indiceAmigo =  Math.floor(Math.random()*(arrayAmigos.length))+1;
         let nombreGanador = arrayAmigos[indiceAmigo-1];
 
-        agregarListaHtml(nombreGanador, '#resultado' , true); 
+        let contenedorListaHtmlUl = document.querySelector('#listaAmigos');
+        contenedorListaHtmlUl.innerHTML = "";
+        agregarListaHtml(`El nombre del ganador es : ${nombreGanador}`, '#resultado' , true); 
     }
 
 
@@ -89,7 +90,7 @@ function validarTextoIngresado(inputTxt) {
     } else if (inputTxt.length > 20) {
         alert("Por favor, inserte un nombre de máximo 20 caracteres.");
         return false;
-    } else if (format.test(inputTxt) == true) { // contiene chars espaciales
+    } else if (format.test(inputTxt) == true) { // contiene chars especiales
         alert("No se aceptan caracteres espaciales");
         return false;
     } else{
