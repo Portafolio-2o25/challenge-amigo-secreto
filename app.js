@@ -1,4 +1,4 @@
-// Author : Felipe Toro R.
+// Author : Felipe Toro
 // Date   : 12 Marzo 2025
 
 let arrayAmigos = [];
