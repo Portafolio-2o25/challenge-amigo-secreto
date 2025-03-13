@@ -1,6 +1,6 @@
-<em> # Juego del amigo secreto </em>
+# Juego del amigo secreto
 
-![Landing Page de Challenge amigo secreto desarrollado en Alura LATAM](https://imgur.com/a/FvPylAV)
+![Landing Page de Challenge amigo secreto desarrollado en Alura LATAM]([https://imgur.com/a/FvPylAV](https://github.com/Portafolio-2o25/challenge-amigo-secreto/blob/aada385d2323d32f35cf5d10d657207056c5d4fb/LandingPageChallenge.png))
 
 ## :hammer:Funcionalidades del proyecto
 
