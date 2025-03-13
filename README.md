@@ -9,14 +9,14 @@
 
 ## :white_check_mark:Validaciones del proyecto
 
-- `Campos vacios`: El Campo texto no debe estar vacio al momento de añadir un amigo.
+- `Campos vacios`: El Campo texto no debe estar vacío al momento de añadir un amigo.
 - `Largos máximos`: El nombre ingresado no debe sobrepasar los 20 caracteres.
 - `Caracteres especiales`: El nombre ingresado no debe contener caracteres especiales (ej: @, !, +).
 
 ## :open_file_folder: Acceso al proyecto
 
-*El proyecto está disponible en GitHuB pages a traves del siguiente enlace :*
-
+*El proyecto está disponible en GitHub pages a traves del siguiente enlace :*
+[Github Pages](https://portafolio-2o25.github.io/challenge-amigo-secreto/)
 
 ## :desktop_computer: Tecnologías utilizadas
 
